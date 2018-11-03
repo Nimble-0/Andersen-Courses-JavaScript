@@ -82,16 +82,17 @@ var num;
 
 function f5(num){
 if (num < 0){
-    for (num; num<0; num++){
-        console.log(num); 
+    for (i = 0; i > num; i--){
+        console.log(i); 
     }
 }
 if (num > 0){
-    for (num; num>0; num--){
-        console.log(num); 
+    for (i = 0; i < num; i++){
+        console.log(i); 
     }
 }
 }
 
 f5(6);
+console.log(" ");
 f5(-4);
