@@ -42,13 +42,13 @@ function f3(some){
     if(some === null){
         console.log("Полученное значение является NULL");
     }
-    if(some === undefined){
+    else if(some === undefined){
         console.log("Полученное значение является undefined"); 
     }
-  /*if(some !== null && some !== undefined){
+    else{
         console.log("Полученное значение не является ни NULL, ни undefined"); 
     }
-    */
+    
 }
 
 f3(t1);
