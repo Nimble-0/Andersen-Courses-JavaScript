@@ -22,10 +22,10 @@ f1(2, 5);
 /*Напишите функцию, которая принимает 1 параметр - строку и возвращает новую 
 строку вида, “Вы ввели * полученная строка *”.*/
 console.log("\nЗадание 2");
-var str, newStr;
+var str;
 
 function f2 (str){
-newStr = "Вы ввели: " + str;
+var newStr = "Вы ввели: " + str;
 console.log(newStr);
 }
 
@@ -45,9 +45,10 @@ function f3(some){
     if(some === undefined){
         console.log("Полученное значение является undefined"); 
     }
-    if(some !== null && some !== undefined){
+  /*if(some !== null && some !== undefined){
         console.log("Полученное значение не является ни NULL, ни undefined"); 
     }
+    */
 }
 
 f3(t1);
