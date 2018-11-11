@@ -1,0 +1,173 @@
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 402px;
+    height: 690px;
+    margin-top: -345px;
+    margin-left: -201px;
+}
+
+button{
+    position: absolute;
+    width: 96.5px;
+    height: 69px;
+    font-size: 24px;
+}
+
+button:hover {
+    border: 1px solid;
+    background-color: #d1c9c9;
+}
+
+button#id_pl_mi {
+    margin-top: -79px;
+    margin-left: 6px;
+}
+
+button#id_0 {
+    margin-top: -79px;
+    margin-left: 104px;
+}
+
+button#id_zap {
+    margin-top: -79px;
+    margin-left: 202px;
+}
+
+button#id_ravno {
+    margin-top: -79px;
+    margin-left: 300px;
+}
+
+button#id_1 {
+    margin-top: -148px;
+    margin-left: 6px;
+}
+
+button#id_2 {
+    margin-top: -148px;
+    margin-left: 104px;
+}
+
+button#id_3 {
+    margin-top: -148px;
+    margin-left: 202px;
+}
+
+button#id_plus {
+    margin-top: -148px;
+    margin-left: 300px;
+}
+
+button#id_4 {
+    margin-top: -218px;
+    margin-left: 6px;
+}
+
+button#id_5 {
+    margin-top: -218px;
+    margin-left: 104px;
+}
+
+button#id_6 {
+    margin-top: -218px;
+    margin-left: 202px;
+}
+
+button#id_minus {
+    margin-top: -218px;
+    margin-left: 300px;
+}
+
+button#id_7 {
+    margin-top: -288px;
+    margin-left: 6px;
+}
+
+button#id_8 {
+    margin-top: -288px;
+    margin-left: 104px;
+}
+
+button#id_9 {
+    margin-top: -288px;
+    margin-left: 202px;
+}
+
+button#id_multi {
+    margin-top: -288px;
+    margin-left: 300px;
+}
+
+button#id_ce {
+    margin-top: -358px;
+    margin-left: 6px;
+}
+
+button#id_c {
+    margin-top: -358px;
+    margin-left: 104px;
+}
+
+button#id_back {
+    margin-top: -358px;
+    margin-left: 202px;
+}
+
+button#id_div {
+    margin-top: -358px;
+    margin-left: 300px;
+}
+
+button#id_perc {
+    margin-top: -428px;
+    margin-left: 6px;
+}
+
+button#id_sqrt {
+    margin-top: -428px;
+    margin-left: 104px;
+}
+
+button#id_square {
+    margin-top: -428px;
+    margin-left: 202px;
+}
+
+button#id_one_x {
+    margin-top: -428px;
+    margin-left: 300px;
+}
+
+#result {
+    position: absolute;
+    margin-top: -579px;
+    margin-left: 359px;
+    font-size: 54px;
+    font-family: monospace;
+}
+
+div#archive {
+    position: absolute;
+    margin-top: -647px;
+    margin-left: 20px;
+}
+
+.history {
+    visibility: hidden;
+    color: rgb(37, 34, 43);
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -738px;
+    margin-left: 390px;
+}
+
+.history_result {
+    background: #e0dfe3;
+    height: 445px;
+    width: 300px;
+    z-index: 100000;
+    overflow-y: auto;
+}

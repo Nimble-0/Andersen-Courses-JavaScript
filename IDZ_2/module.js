@@ -1,5 +1,4 @@
 //Модуль включает следующие функции:
-//export {checkUnd, checkNull, checkNaN, checkEmptyObj, mapForObj, rand, deepEquals, deleteProp};
 
 //1. Проверка на undefined.
 function checkUnd(some){

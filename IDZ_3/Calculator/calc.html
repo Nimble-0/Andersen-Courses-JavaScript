@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Калькулятор</title>
+        <link rel="stylesheet" href="calc.css">
+        <script src="calc.js"></script>
+    </head>
+    <body>
+        <div class="center">
+            <img src="calc.png" alt="Calculator">
+            <button id="id_zhur" onclick="btn_zhur()" style="height: 35px;width: 40px;margin-top:-689px;margin-left: 358px;background-color: #b4b0ce;border-color: gray;">Ж</button>
+
+            <button id="id_pl_mi" onclick="btn_pl_mi(id)">±</button>
+            <button id="id_0" onclick="anyButton(id)">0</button>
+            <button id="id_zap" onclick="anyButton(id)">.</button>
+            <button id="id_ravno" onclick="btn_ravno()">=</button>
+
+            <button id="id_1" onclick="anyButton(id)">1</button>
+            <button id="id_2" onclick="anyButton(id)">2</button>
+            <button id="id_3" onclick="anyButton(id)">3</button>
+            <button id="id_plus" onclick="btn_operation('+')">+</button>
+
+            <button id="id_4" onclick="anyButton(id)">4</button>
+            <button id="id_5" onclick="anyButton(id)">5</button>
+            <button id="id_6" onclick="anyButton(id)">6</button>
+            <button id="id_minus" onclick="btn_operation('-')">-</button>
+
+            <button id="id_7" onclick="anyButton(id)">7</button>
+            <button id="id_8" onclick="anyButton(id)">8</button>
+            <button id="id_9" onclick="anyButton(id)">9</button>
+            <button id="id_multi" onclick="btn_operation('*')">x</button>
+
+            <button id="id_ce" onclick="btn_ce()">CE</button>
+            <button id="id_c" onclick="btn_c()">C</button>
+            <button id="id_back" onclick="btn_backspace()">◄</button>
+            <button id="id_div" onclick="btn_operation('/')">/</button>
+
+            <button id="id_perc" onclick="btn_perc()">%</button>
+            <button id="id_sqrt" onclick="btn_sqrt()">√</button>
+            <button id="id_square" onclick="btn_square(id)">x²</button>
+            <button id="id_one_x" onclick="btn_one_x(id)">1/x</button>
+
+            <div id="result">0</div>
+            <div id="archive"></div>
+
+            <div class="history" id="id_history">
+                    <div class="alert alert-primary" role="alert">Журнал</div>
+                    <div id="hist" class="history_result">
+                        <hr />
+                    </div>
+                </div>
+        </div>
+
+    </body>
+</html>
