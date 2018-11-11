@@ -9,15 +9,17 @@
 }
 
 button{
+    border-style: hidden;
     position: absolute;
     width: 96.5px;
     height: 69px;
     font-size: 24px;
+    background-color: #d9d7d7;
 }
 
 button:hover {
-    border: 1px solid;
-    background-color: #d1c9c9;
+    border: 2.5px solid;
+    background-color: #d1c9c9; 
 }
 
 button#id_pl_mi {
@@ -28,6 +30,7 @@ button#id_pl_mi {
 button#id_0 {
     margin-top: -79px;
     margin-left: 104px;
+    background-color: #fdf8f8;
 }
 
 button#id_zap {
@@ -43,16 +46,19 @@ button#id_ravno {
 button#id_1 {
     margin-top: -148px;
     margin-left: 6px;
+    background-color: #fdf8f8;
 }
 
 button#id_2 {
     margin-top: -148px;
     margin-left: 104px;
+    background-color: #fdf8f8;
 }
 
 button#id_3 {
     margin-top: -148px;
     margin-left: 202px;
+    background-color: #fdf8f8;
 }
 
 button#id_plus {
@@ -63,16 +69,19 @@ button#id_plus {
 button#id_4 {
     margin-top: -218px;
     margin-left: 6px;
+    background-color: #fdf8f8;
 }
 
 button#id_5 {
     margin-top: -218px;
     margin-left: 104px;
+    background-color: #fdf8f8;
 }
 
 button#id_6 {
     margin-top: -218px;
     margin-left: 202px;
+    background-color: #fdf8f8;
 }
 
 button#id_minus {
@@ -83,16 +92,19 @@ button#id_minus {
 button#id_7 {
     margin-top: -288px;
     margin-left: 6px;
+    background-color: #fdf8f8;
 }
 
 button#id_8 {
     margin-top: -288px;
     margin-left: 104px;
+    background-color: #fdf8f8;
 }
 
 button#id_9 {
     margin-top: -288px;
     margin-left: 202px;
+    background-color: #fdf8f8;
 }
 
 button#id_multi {

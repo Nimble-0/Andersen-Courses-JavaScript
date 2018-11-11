@@ -36,8 +36,10 @@ function anyButton(myId){
  }
 
  function btn_ce(){
+    other_ops = true;
     document.getElementById("result").setAttribute("style", "margin-left:" + 359 + "px");
-    document.getElementById("result").innerHTML = znak;
+    document.getElementById("result").innerHTML = 0;
+    o_first = 0;
 }
 
  function btn_c(){
