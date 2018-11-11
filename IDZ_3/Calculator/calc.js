@@ -36,10 +36,17 @@ function anyButton(myId){
  }
 
  function btn_ce(){
+ /*    if (result!= null){
     other_ops = true;
     document.getElementById("result").setAttribute("style", "margin-left:" + 359 + "px");
     document.getElementById("result").innerHTML = 0;
     o_first = 0;
+     }
+     else{
+    other_ops = false;  */   
+    document.getElementById("result").setAttribute("style", "margin-left:" + 359 + "px");
+    document.getElementById("result").innerHTML = 0; 
+  //   }
 }
 
  function btn_c(){
