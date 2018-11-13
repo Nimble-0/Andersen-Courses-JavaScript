@@ -2,33 +2,18 @@
 var Module = function() {
     return {
         //1. Проверка на undefined.
-        checkUnd: function(some){
-            var some;    
-            if (some === undefined){
-                return true;
-            } else {
-                return false;
-            }
+        checkUnd: function(some){   
+            return (some === undefined);
         },
 
         //2. Проверка на null.
         checkNull: function(some){
-            var some;
-            if (some === null){
-                return true;
-            } else {
-                return false;
-            }
+            return (some === null);
         },
 
         //3. Проверка на NaN.
         checkNaN: function(some){
-            var some;
-            if (isNaN(some)){
-                return true;
-            } else {
-                return false;
-            }
+            return Number.isNaN(some);
         },
 
         //4. Проверка, что объект пустой (нет своих свойств).

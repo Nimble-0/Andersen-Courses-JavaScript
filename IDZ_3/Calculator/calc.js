@@ -1,4 +1,4 @@
-var first = null; var second = null; var ravno = null;
+var first = null; var second = null; var ravno = null; op_ce = false;
 
 hidden = false;
 function btn_zhur(){
@@ -10,10 +10,6 @@ function btn_zhur(){
     document.getElementById("id_history").setAttribute("style", "visibility: visible");
     hidden = true;
     }
-}
-
-function btn_perc(){
-    
 }
 
 function anyButton(myId){
@@ -36,17 +32,10 @@ function anyButton(myId){
  }
 
  function btn_ce(){
- /*    if (result!= null){
-    other_ops = true;
-    document.getElementById("result").setAttribute("style", "margin-left:" + 359 + "px");
-    document.getElementById("result").innerHTML = 0;
-    o_first = 0;
-     }
-     else{
-    other_ops = false;  */   
+     op_ce = true;  
     document.getElementById("result").setAttribute("style", "margin-left:" + 359 + "px");
     document.getElementById("result").innerHTML = 0; 
-  //   }
+
 }
 
  function btn_c(){
@@ -101,8 +90,10 @@ function btn_one_x(){
 function btn_operation(what){
     ops = true;
     num = document.getElementById("result").innerHTML;
+    if (op_ce == false){
     document.getElementById("archive").innerHTML = "";
     document.getElementById("archive").innerHTML += num + what;
+    }
     document.getElementById("result").setAttribute("style", "margin-left:" + 359 + "px");
     document.getElementById("result").innerHTML = what;
     znak = what;
@@ -137,6 +128,7 @@ function btn_ravno(){
     if(znak === "-") { ravno = first - second; }
     if(znak === "*") { ravno = first * second; }
     if(znak === "/") { ravno = first / second; }
+    if(znak === "%") { ravno = (first * second)/100; }
     
     document.getElementById("result").innerHTML = parseFloat(ravno);
     document.getElementById("archive").innerHTML += znak + second;
