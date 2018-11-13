@@ -75,7 +75,7 @@ var Module = function() {
         deleteProp: function(obj8, prop){
             var newObj8 = {};
             for(var key in obj8) { 
-                if(newObj8[key]===prop){
+                if(obj8[key]===prop){
                 newObj8[key] = obj8[key];
                 }/*
                 else {
