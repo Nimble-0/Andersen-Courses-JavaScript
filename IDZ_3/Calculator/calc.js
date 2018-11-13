@@ -44,7 +44,7 @@ function anyButton(myId){
      document.getElementById("result").setAttribute("style", "margin-left:" + 359 + "px");
      document.getElementById("result").innerHTML = "0";
      document.getElementById("archive").innerHTML = "";
-     var first = null; var second = null; var ravno = null; op_ce = false; other_ops = false;
+     first = null; second = null; ravno = null; op_ce = false; other_ops = false;
  }
 
 function btn_sqrt(){
