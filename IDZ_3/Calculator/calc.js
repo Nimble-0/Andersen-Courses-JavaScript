@@ -1,4 +1,4 @@
-var first = null; var second = null; var ravno = null; op_ce = false;
+var first = null; var second = null; var ravno = null; op_ce = false; other_ops = false;
 
 hidden = false;
 function btn_zhur(){
@@ -29,6 +29,8 @@ function anyButton(myId){
 
  function btn_pl_mi(){
     document.getElementById("result").innerHTML = -(document.getElementById("result").innerHTML);
+    length = document.getElementById("result").innerHTML.length;
+    newLength(length);
  }
 
  function btn_ce(){
@@ -42,7 +44,7 @@ function anyButton(myId){
      document.getElementById("result").setAttribute("style", "margin-left:" + 359 + "px");
      document.getElementById("result").innerHTML = "0";
      document.getElementById("archive").innerHTML = "";
-     first = null; second = null; ravno = null; znak = null;
+     var first = null; var second = null; var ravno = null; op_ce = false; other_ops = false;
  }
 
 function btn_sqrt(){
@@ -92,7 +94,10 @@ function btn_operation(what){
     num = document.getElementById("result").innerHTML;
     if (op_ce == false){
     document.getElementById("archive").innerHTML = "";
-    document.getElementById("archive").innerHTML += num + what;
+    document.getElementById("archive").innerHTML += num;
+    if (ops == false){
+    document.getElementById("archive").innerHTML += what;
+    }
     }
     document.getElementById("result").setAttribute("style", "margin-left:" + 359 + "px");
     document.getElementById("result").innerHTML = what;
@@ -157,11 +162,11 @@ function btn_backspace(){
 
 function newLength(newlength){
     if (newlength > 12){
-        document.getElementById("result").setAttribute("style", "margin-left: 155px; font-size: 30px;");       
+        document.getElementById("result").setAttribute("style", "margin-left: 135px; margin-top: -555px; font-size: 30px;");       
         if(newlength > 16){
-            document.getElementById("result").setAttribute("style", "margin-left: 60px; font-size: 30px;");     
+            document.getElementById("result").setAttribute("style", "margin-left: 50px; margin-top: -555px; font-size: 30px;");     
             if (newlength > 20){
-                document.getElementById("result").setAttribute("style", "margin-left: 30px; font-size: 30px;");
+                document.getElementById("result").setAttribute("style", "margin-left: 15px; margin-top: -555px; font-size: 30px;");
             }    
         }
     }
