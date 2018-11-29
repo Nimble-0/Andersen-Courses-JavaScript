@@ -1,7 +1,7 @@
 ;var ProgModule = (function() {
     var public = {};
 
-Junior = function (name) {
+var Junior = function (name) {
     this.name = name;
     this.level = this.constructor.name;
     this.lines = 100;
@@ -14,7 +14,7 @@ Junior = function (name) {
   
     public.Junior = Junior;
 
-Middle = function(name) {
+var Middle = function(name) {
     Junior.apply(this, arguments);
     this.lines = 300;
     this.zarplata = 30;
@@ -25,7 +25,7 @@ Middle = function(name) {
 
     public.Middle = Middle;
 
-Senior = function(name) {
+var Senior = function(name) {
     Junior.apply(this, arguments);
     this.lines = 500;
     this.zarplata = 50;
